@@ -9,9 +9,12 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       flash[:danger] = t ".invalid"
-      render :new 
+      render :new
     end
   end
-  
-  def destroy; end
+
+  def destroy
+    log_out
+    redirect_to root_path
+  end
 end
