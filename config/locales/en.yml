@@ -1,4 +1,13 @@
 en:
+  shared:
+    error: Error
+  users:
+    create:
+      success: Success
+    new:
+      create-account: Create new account
+    show:
+      not_found: "Can't find user"
   layouts:
     application:
       english: English
