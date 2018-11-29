@@ -33,6 +33,10 @@ nav {
   color: $red
 }
 
+.divider{
+  height: 10px;
+}
+
 // ==================end-nav-top=============
 // ==================nav-2================
 
@@ -73,7 +77,7 @@ input {
   color: $red;
   ul {
     color: $red;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
   }
 }
 // ===============end-form================
