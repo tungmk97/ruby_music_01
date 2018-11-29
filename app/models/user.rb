@@ -7,9 +7,21 @@ class User < ApplicationRecord
   has_many :liked, as: :likeable
 
   validates :name, presence: true,
-    length: {maximum: Settings.title.max_length}
+    length: {maximum: Settings.user.name.length}
   validates :email, presence: true,
-    length: {maximum: Settings.email.length},
+    length: {maximum: Settings.user.email.length},
     format: {with: VALID_EMAIL_REGEX},
-    uniqueness: {case_sensitive: Settings.email.case_sensitive}
+    uniqueness: {case_sensitive: Settings.user.case_sensitive}
+  validates :password, presence: true,
+    length: {minimum: Settings.user.password.length},
+    allow_nil: true
+
+  has_secure_password
+  before_save :downcase_email
+
+  private
+  
+  def downcase_email
+    email.downcase!
+  end
 end
