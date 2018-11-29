@@ -1,2 +1,29 @@
 en:
-  
+  layouts:
+    application:
+      english: English
+      vietnamese: Vietnamese
+      music_app: Music App
+    
+    header:
+      home: Home
+      collection: Collection
+      upload: Upload
+      sign_up: Sign up
+      top_100: Top 100
+      vietnam: Vietnamese
+      us-uk: US-UK
+      asia: Asia
+      edm: EDM
+      acostic: Acostic Song
+      year: 1970s
+      coffe: Coffe
+      album: Album
+      concert: Concert
+      artist: Artist
+      korea: Korea
+      japan: Japan
+      icon-soundcloud: Icon soundcloud
+    static_pages:
+      hot_topic: Hot topic
+      hot_music: Hot music
