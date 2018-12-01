@@ -3,8 +3,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 gem "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
-gem "bootstrap-kaminari-views"
 gem "bootstrap"
+gem "bootstrap-kaminari-views"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker"
@@ -20,6 +20,7 @@ gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "shoulda-matchers", require: false
 end
 
 group :development do

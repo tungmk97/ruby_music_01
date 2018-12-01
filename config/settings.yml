@@ -1,0 +1,7 @@
+content:
+  max_length: 3000
+title:
+  max_length: 100
+email:
+  length: 50
+  case_sensitive: false
