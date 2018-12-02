@@ -1,0 +1,39 @@
+<div class="content">
+  <div class="row mt-5">
+      <div class="col-3">
+      <%= image_tag "play.png", width: 150 %>
+    </div>
+    <div class="col-6">
+      <h3>
+        <%= @song.title %>
+      </h3>
+
+      <h4>
+        <%= link_to @song.singer.name, singer_path %>
+      </h4>
+
+      <h4>
+        <%= t "songs.view" %> 
+        <%= @song.view %>
+      </h4>
+
+      <h5>
+        <%= t "songs.post_at" %>
+        <%= l @song.created_at %>
+      </h5>
+    </div>
+  </div>
+  
+  <div class="col-9 row mt-5">
+    <audio autoplay controls loop>
+      <source src="<%= @song.song_url %>" type="audio/mp3">
+    </audio>
+  </div>
+
+  <div class="col-9 row mt-5 mb-5">
+    <%= t ".lyrics" %>
+    <p>
+      <%= @song.lyrics %>
+    </p>
+  </div>
+</div>

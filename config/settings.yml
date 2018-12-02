@@ -5,3 +5,5 @@ title:
 email:
   length: 50
   case_sensitive: false
+pages:
+  per_page: 10
