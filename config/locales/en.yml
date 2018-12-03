@@ -1,4 +1,9 @@
 en:
+  sessions:
+    create:
+      invalid: Invalid email or password
+    new:
+      login: Login
   shared:
     error: Error
   users:
