@@ -50,11 +50,19 @@ en:
       all_songs: "HOT"
     show:
       lyrics: "Lyrics: "
+      comments_count: " Comments"
 
   singers:
     show:
       singer: "Singer Infomation"
       description: "Description: "
+
+  comments:
+    type: "Type comments here ..."
+    post: "Post"
+    create:
+      created: "Comment created"
+      failed: "Comment failed"
 
   time:
     formats:

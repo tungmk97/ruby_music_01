@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   get "sessions/new"
+  resources :users
+  resources :singers
+  resources :comments
 end

@@ -14,5 +14,5 @@ class Song < ApplicationRecord
     uniqueness: true
   validates :view, numericality: true
 
-  scope :included, ->{includes :singer}
+  scope :include_to_song, ->{includes :singer, :comments}
 end
