@@ -26,14 +26,14 @@ nav {
 }
 
 .search-box {
-  width: 580px;
+  width: 480px;
 }
 
 .upload-txt:hover {
   color: $red
 }
 
-.divider{
+.divider {
   height: 10px;
 }
 
@@ -51,7 +51,7 @@ nav {
     background: $white;
   }
 }
-.dropdown:hover>.dropdown-menu  {
+.dropdown:hover>.dropdown-menu {
   display: block;
 }
 

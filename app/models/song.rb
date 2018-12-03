@@ -1,5 +1,5 @@
 class Song < ApplicationRecord
-  SONG_ATTRIBUTES = %i(singer_id title lyrics song_url view)
+  SONG_ATTRIBUTES = %i(singer_id title lyrics song_url view).freeze
 
   belongs_to :singer
   has_many :liked, as: :likeable
@@ -14,5 +14,5 @@ class Song < ApplicationRecord
     uniqueness: true
   validates :view, numericality: true
 
-  scope :included, -> {includes :singer}
+  scope :included, ->{includes :singer}
 end
