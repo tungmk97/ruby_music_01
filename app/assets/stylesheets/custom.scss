@@ -152,3 +152,25 @@ audio {
   width: 100%;
   height: 80px;
 }
+
+.comments {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid $gray-light;
+  }
+  .content {
+    display: block;
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+  }
+  .gravatar {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 5px 0 0 10px;
+  }
+}
