@@ -1,4 +1,6 @@
 class Song < ApplicationRecord
+  SONG_ATTRIBUTES = %i(singer_id title lyrics song_url view)
+
   belongs_to :singer
   has_many :liked, as: :likeable
   has_many :comments, dependent: :destroy
@@ -11,4 +13,6 @@ class Song < ApplicationRecord
   validates :song_url, presence: true,
     uniqueness: true
   validates :view, numericality: true
+
+  scope :included, -> {includes :singer}
 end

@@ -1,0 +1,7 @@
+<div class="content">
+  <h3><%= t ".all_songs" %></h3>
+      <ul class="">
+        <%= render @songs %>
+      </ul>
+  <%= paginate @songs, theme: "twitter-bootstrap-3" %>
+</div>

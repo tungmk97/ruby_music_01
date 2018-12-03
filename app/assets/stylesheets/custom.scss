@@ -1,35 +1,35 @@
 @import 'color.scss';
 // ===============nav-top============
-.nav-top{
+.nav-top {
   padding: unset;
   background: &gray;
 }
 
-.div-collapse{
+.div-collapse {
   height: 40px;
   margin-left: -17px;
 }
 
-nav{
+nav {
   background: $gray
 }
 
-.home-link{
+.home-link {
   width: 100px;
-  &:hover{
+  &:hover {
     background: $black
   }
 }
 
-.home-link{
+.home-link {
   border-right: 1px solid $black;
 }
 
-.search-box{
+.search-box {
   width: 580px;
 }
 
-.upload-txt:hover{
+.upload-txt:hover {
   color: $red
 }
 
@@ -37,33 +37,63 @@ nav{
 
 // =====================nav-2================
 
-.nav-2{
+.nav-2 {
   background: $gray-light;
   padding: unset
 }
 
-.nav-2 li{
+.nav-2 li {
   margin-right: 20px;
-  &:hover{
+  &:hover {
     background: $white;
   }
 }
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover>.dropdown-menu  {
   display: block;
 }
 
-.hot-music{
+.hot-music {
   position: relative;
 }
 
-a{
+a {
   display: block;
 }
 // ==================end-nav-2==============
 // ===============footer====================
 
-footer{
+footer {
   background: $black;
   height: 100px;
   width: 100%;
+}
+
+.content {
+  ul {
+    padding: 10px;
+    li {
+      list-style: none;
+      display: flex;
+      margin: 10px 0;
+    }
+  }
+}
+
+.song-title {
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.song-singer {
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.song-view {
+  font-size: 15px;
+}
+
+audio {
+  width: 100%;
+  height: 80px;
 }

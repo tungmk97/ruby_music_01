@@ -1,0 +1,18 @@
+<div class="content">
+  <h3><%= t ".singer" %></h3>
+  <div class="row mt-5 mb-5">
+    <div class="col-3">
+      <%= image_tag "play.png", width: 150 %>
+    </div>
+    <div class="col-9">
+      <h3>
+        <%= @singer.name %>
+      </h3>
+
+      <h5>
+        <%= t ".description" %>
+        <%= @singer.description %>
+      </h5>
+    </div>
+  </div>
+</div>

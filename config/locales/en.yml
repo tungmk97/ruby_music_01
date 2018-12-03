@@ -27,3 +27,21 @@ en:
     static_pages:
       hot_topic: Hot topic
       hot_music: Hot music
+  
+  songs:
+    title: "Title: "
+    post_at: "Post At: "
+    view: "View: "
+    index:
+      all_songs: "HOT"
+    show:
+      lyrics: "Lyrics: "
+
+  singers:
+    show:
+      singer: "Singer Infomation"
+      description: "Description: "
+
+  time:
+    formats:
+      default: "%d/%m/%Y"
