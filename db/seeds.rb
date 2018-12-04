@@ -1,3 +1,6 @@
+Song.delete_all
+User.delete_all
+
 Singer.create! name: "Rhymastic",
                description: Faker::Lorem.sentence(5)
 
@@ -12,6 +15,23 @@ Song.create! singer_id: 1,
   description = Faker::Lorem.sentence(5)
   Singer.create! name: name,
                  description: description
+end
+
+10.times do |n|
+  name  = Faker::Name.name
+  email = "example-#{n+1}@railstutorial.org"
+  password = "password"
+  User.create! name:name,
+               email: email,
+               password: password,
+               password_confirmation: password
+end
+
+10.times do |n|
+  name = Faker::Name.name
+  description = Faker::Lorem.sentence(5)
+  Playlist.create! name: name,
+                   description: description
 end
 
 10.times do |n|
