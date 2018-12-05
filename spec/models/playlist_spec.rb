@@ -4,13 +4,14 @@ RSpec.describe Playlist, type: :model do
   context "validations" do
     it "name" do 
       is_expected.to validate_presence_of :name
-    end
-
-    it "name_length" do
       is_expected.to validate_length_of(:name).
         is_at_most Settings.title.max_length
     end
 
+    it "user_id" do
+      is_expected.to validate_presence_of :user_id
+    end
+    
     it "des_length" do
       is_expected.to validate_length_of(:description).
         is_at_most Settings.content.max_length

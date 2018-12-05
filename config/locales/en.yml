@@ -1,4 +1,10 @@
 en:
+  application:
+    require_login: Please log in.
+  playlists:
+    playlist_created: Playlist created!
+    playlist_deleted: Playlist deleted.
+    delete_failed: Delete Failed.
   sessions:
     create:
       invalid: Invalid email or password
@@ -6,6 +12,13 @@ en:
       login: Login
   shared:
     error: Error
+    playlist_form:
+      create: Create
+      enter_name: Enter name...
+      enter_description: Enter description...
+      create_new_playlist: Create new playlist
+    user_info: 
+      playlist: Playlist
   users:
     create:
       success: Success
@@ -18,6 +31,8 @@ en:
       english: English
       vietnamese: Vietnamese
       music_app: Music App
+    header:
+      playlist: Playlist
     
     header:
       home: Home
@@ -38,6 +53,7 @@ en:
       korea: Korea
       japan: Japan
       icon-soundcloud: Icon soundcloud
+      playlist: Playlist
     static_pages:
       hot_topic: Hot topic
       hot_music: Hot music
