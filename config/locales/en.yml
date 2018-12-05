@@ -35,7 +35,7 @@ en:
       playlist: Playlist
     
     header:
-      home: Home
+      all_song: Songs
       collection: Collection
       upload: Upload
       sign_up: Sign up
