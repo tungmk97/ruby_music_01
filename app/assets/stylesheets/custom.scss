@@ -1,5 +1,5 @@
 @import 'color.scss';
-// ===============nav-top============
+/*---------------Nav-Top---------------*/
 .nav-top {
   padding: unset;
   background: $gray;
@@ -34,11 +34,15 @@ nav {
 }
 
 .divider {
-  height: 10px;
+  height: 1px;
+  background: $gray-light;
 }
 
-// ==================end-nav-top=============
-// ==================nav-2================
+dropdown-account {
+  background: $red 
+}
+/*--------------End-nav-top------------*/
+/*--------------Nav-2------------------*/
 
 .nav-2 {
   background: $gray-light;
@@ -62,8 +66,8 @@ nav {
 a {
   display: block;
 }
-// ==================end-nav-2============
-// ===================form================
+/*--------------End-Nav-2------------*/
+/*--------------Form-----------------*/
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -80,13 +84,43 @@ input {
     margin: 0 0 30px;
   }
 }
-// ===============end-form================
-// ===============footer==================
+/*--------------End-Form---------------*/
 
+/*--------------Playlist---------------*/
+ol {
+  list-style-type: none;
+}
+
+ol li {
+  width: 200px;
+  height: 150px;
+  float: left;
+  background-color: $gray-light;
+  margin: 0 3px 3px;
+  text-align: center;
+  &:hover {
+    background: $black;
+  }
+  &:hover h5 {
+    color: $red
+  }
+}
+
+ol li h5 {
+  height: 115px;
+}
+
+.bg-create-playlist {
+  background: $gray-light;
+}
+/*--------------End-Playlist-----------*/
+
+/*--------------Footer-----------------*/
 footer {
   background: $black;
   height: 100px;
   width: 100%;
+  margin-top: 10px;
 }
 
 .content {
