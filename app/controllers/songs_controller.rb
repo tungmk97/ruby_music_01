@@ -9,6 +9,7 @@ class SongsController < ApplicationController
     @comments = @song.comments.ordered
                      .page(params[:page]).per Settings.pages.per_page
     @comment = current_user.comments.build if logged_in?
+    @genres = @song.genres
   end
 
   private

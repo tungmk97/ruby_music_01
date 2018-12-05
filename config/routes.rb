@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get "sessions/new"
   resources :users
   resources :singers
-  resources :comments
+  resources :comments, only: %i(create destroy)
+  resources :genres
 end
