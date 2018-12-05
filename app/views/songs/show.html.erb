@@ -25,7 +25,7 @@
   </div>
   
   <div class="col-9 row mt-5">
-    <audio autoplay controls loop>
+    <audio controls loop>
       <source src="<%= @song.song_url %>" type="audio/mp3">
     </audio>
   </div>
@@ -35,5 +35,22 @@
     <p>
       <%= @song.lyrics %>
     </p>
+  </div>
+
+  <div class="col-9 mb-5">
+    <% if logged_in? %>
+      <div class="row">
+      <aside class="col-md-12">
+          <%= render "shared/comment_form" %>
+      </aside>
+    <% end %>
+    </div>
+    <% if @song.comments.any? %>
+      <span><%= @song.comments.count %><%= t ".comments_count" %></span>
+      <ul class="comments">
+        <%= render @comments %>
+      </ul>
+      <%= paginate @comments, theme: "twitter-bootstrap-3" %>
+    <% end %>
   </div>
 </div>

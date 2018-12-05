@@ -26,3 +26,12 @@ end
                song_url: song_url,
                view: view
 end
+
+users = User.order(:created_at).take(10)
+50.times do
+  content = Faker::Lorem.sentence(5)
+  users.each do |user|
+    user.comments.create! content: content,
+                          song_id: rand(1..10)
+  end
+end

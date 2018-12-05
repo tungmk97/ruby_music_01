@@ -4,8 +4,11 @@ class SongsController < ApplicationController
   end
 
   def show
-    @song = Song.included.find_by id: params[:id]
+    @song = Song.include_to_song.find_by id: params[:id]
     redirect_to songs_url unless @song
+    @comments = @song.comments.ordered
+                     .page(params[:page]).per Settings.pages.per_page
+    @comment = current_user.comments.build if logged_in?
   end
 
   private
