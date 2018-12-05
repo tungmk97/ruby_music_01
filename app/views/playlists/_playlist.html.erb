@@ -1,0 +1,7 @@
+<li id="playlist-<%= playlist.id %>">
+  <h5 class="name_playlist mx-auto pt-3 font-weight-bold"><%= playlist.name %> </h5>
+  <p>
+    <%= link_to t(".delete"), playlist, method: :delete,
+                                        data: {confirm: t(".you-sure")}, class: "text-danger" %>
+  </p>
+</li>
