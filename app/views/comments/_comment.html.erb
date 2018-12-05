@@ -8,5 +8,6 @@
     <span class="timestamp">
       <%= "#{time_ago_in_words comment.created_at}" %>
     </span>
+    <%= link_to t(".delete"), comment, method: :delete, data: {confirm: t(".confirm")} %>
   </div>
 </li>
