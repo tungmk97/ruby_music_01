@@ -76,9 +76,15 @@ en:
   comments:
     type: "Type comments here ..."
     post: "Post"
+    comment:
+      delete: "Delete"
+      confirm: "You sure ?"
     create:
       created: "Comment created"
       failed: "Comment failed"
+    destroy:
+      destroy: "Comment deleted"
+      cant_destroy: "Can't delete comment"
 
   time:
     formats:
