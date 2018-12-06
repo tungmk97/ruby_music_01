@@ -90,3 +90,8 @@ en:
   time:
     formats:
       default: "%d/%m/%Y"
+  playlists:
+    playlists:
+      you_sure: "You sure?"
+    index:
+      playlist: "Playlist"
