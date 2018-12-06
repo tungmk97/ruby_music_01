@@ -18,25 +18,28 @@
         <li class="nav-item active">
           <%= link_to t(".upload"), "#", class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
         </li>
-        <li class="nav-item active">
-          <%= link_to t(".login"), login_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
-        </li>
         <% if logged_in? %>
           <li class="dropdown">
             <%= link_to "#", class: "dropdown-toggle nav-link home-link text-white h-100 pt-2 pl-4", 
               data: {toggle: "dropdown"} do %>
                 <%= t ".account" %> <b class="caret"></b>
             <% end %>
-            <ul class="dropdown-menu bg-white">
-              <li><%= link_to t(".profile"), current_user, class: "mx-auto text-dark" %></li>
-              <li><%= link_to t(".setting"), "#", class: "mx-auto text-dark" %></li>
+            <ul class="dropdown-menu bg-dark">
+              <li><%= link_to t(".profile"), current_user, class: "mx-auto w-50 mx-auto text-white" %></li>
+              <li><%= link_to t(".setting"), "#", class: "mx-auto w-50 mx-auto text-white" %></li>
               <li class="divider"></li>
               <li>
-                <%= link_to t(".logout"), logout_path, class: "mx-auto text-dark", method: :delete %>
+                <%= link_to t(".logout"), logout_path, class: "mx-auto w-50 mx-auto text-white mt-2", method: :delete %>
               </li>
             </ul>
           </li>
+          <li class="nav-item active">
+            <%= link_to t(".playlist"), playlists_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
+          </li>
         <% else %>
+          <li class="nav-item active">
+            <%= link_to t(".login"), login_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
+          </li>
           <li class="nav-item active">
             <%= link_to t(".sign_up"), signup_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
           </li>
