@@ -26,6 +26,7 @@ en:
       create-account: Create new account
     show:
       not_found: "Can't find user"
+
   layouts:
     application:
       english: English
@@ -94,6 +95,12 @@ en:
         upload: Upload song
       create:
         success: Song created
+        failed: Failed
+      edit:
+        save: Save
+        edit: Edit Song
+      update:
+        success: Song edited
         failed: Failed
 
   time:

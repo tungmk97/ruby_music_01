@@ -1,6 +1,5 @@
-<% if @playlist_items.any? %>
-  <ol class="playlists">
-    <%= render @playlist_items %>
-  </ol>
-  <%= paginate @playlist_items, theme: "twitter-bootstrap-3" %>
-<% end %>
+<div class="content">
+  <ul>
+    <%= render @feed_items %>
+  </ul>
+</div>
