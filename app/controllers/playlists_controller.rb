@@ -19,6 +19,10 @@ class PlaylistsController < ApplicationController
     end
   end
 
+  def edit
+    @playlist = Playlist.find_by id: params[:id]
+  end
+
   def destroy
     if @playlist.destroy
       flash[:success] = t ".playlist_deleted"
