@@ -2,9 +2,15 @@ en:
   application:
     require_login: Please log in.
   playlists:
-    playlist_created: Playlist created!
-    playlist_deleted: Playlist deleted.
-    delete_failed: Delete Failed.
+    destroy:
+      playlists_deleted: "Playlist deleted."
+      playlist_created: "Playlist created!"
+      delete_failed: "Delete Failed."
+      playlist_updated: "Update success."
+    edit:
+      update_playlist: "Update your playlist"
+    update:
+      playlist_updated: "Playlist Updated"
   sessions:
     create:
       invalid: Invalid email or password
@@ -19,6 +25,8 @@ en:
       create_new_playlist: Create new playlist
     user_info: 
       playlist: Playlist
+    edit_form:
+      save_change: "Save change"
   users:
     create:
       success: Success
@@ -90,8 +98,3 @@ en:
   time:
     formats:
       default: "%d/%m/%Y"
-  playlists:
-    playlists:
-      you_sure: "You sure?"
-    index:
-      playlist: "Playlist"
