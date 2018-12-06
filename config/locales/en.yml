@@ -46,6 +46,7 @@ en:
     title: "Title: "
     post_at: "Post At: "
     view: "View: "
+    genres: "Genres: "
     index:
       all_songs: "HOT"
     show:

@@ -12,6 +12,13 @@
         <%= link_to @song.singer.name, singer_path %>
       </h4>
 
+      <% if @song.genres.any? %>
+        <span><%= t ".genres" %></span>
+        <span>
+          <%= render @genres %>
+        </span>
+      <% end %>
+
       <h4>
         <%= t "songs.view" %> 
         <%= @song.view %>
