@@ -10,7 +10,7 @@ pages:
   feed: 5
 user: 
   name: 
-    length: 20
+    length: 70
   email:
     length: 50
     case_sensitive: false

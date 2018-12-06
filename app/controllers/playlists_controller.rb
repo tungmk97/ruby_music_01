@@ -19,6 +19,21 @@ class PlaylistsController < ApplicationController
     end
   end
 
+  def edit
+    @playlist = Playlist.find_by id: params[:id]
+  end
+
+  def update
+    @playlist = Playlist.find_by id: params[:id]
+
+    if @playlist.update playlist_params
+      flash[:success] = t ".playlist_updated"
+      redirect_to playlists_path
+    else
+      render :edit
+    end
+  end
+
   def destroy
     if @playlist.destroy
       flash[:success] = t ".playlist_deleted"
@@ -31,7 +46,7 @@ class PlaylistsController < ApplicationController
   private
 
   def playlist_params
-    params.require(:playlist).permit :description, :name
+    params.require(:playlist).permit :id, :name
   end
 
   def correct_user
