@@ -15,4 +15,8 @@ Rails.application.routes.draw do
   resources :singers
   resources :comments, only: %i(create destroy)
   resources :genres
+  namespace :admin do
+    resources :song, except: %i(index show)
+    resources :comments, except: %i(index show)
+  end
 end
