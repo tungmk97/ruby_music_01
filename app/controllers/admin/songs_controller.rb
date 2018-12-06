@@ -1,5 +1,5 @@
 class Admin::SongsController < ApplicationController
-  before_action :current_song, only: %i(edit update)
+  before_action :current_song, only: %i(edit update destroy)
 
   def new
     @song = Song.new
@@ -24,9 +24,18 @@ class Admin::SongsController < ApplicationController
       flash[:success] = t ".success"
       redirect_to root_url
     else
-      flash[:daneger] = t ".failed"
+      flash[:danger] = t ".failed"
       render :edit
     end
+  end
+
+  def destroy
+    if @song.destroy
+      flash[:success] = t ".success"
+    else
+      flash[:danger] = t "failed"
+    end
+    redirect_to root_url
   end
 
   private

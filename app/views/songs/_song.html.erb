@@ -16,8 +16,10 @@
       <%= t "songs.view" %> 
       <%= song.view %>
     </p>
-    <% if current_user && current_user.admin? %>
+    <% if current_user&.admin? %>
       <%= link_to t(".edit"), edit_admin_song_path(song) %>
+      <%= link_to t(".delete"), admin_song_path(song),
+        method: :delete, data: {confirm: t(".confirm")} %>
     <% end %>
   </div>
 </li>
