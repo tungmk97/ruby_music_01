@@ -17,4 +17,8 @@ class SongsController < ApplicationController
   def song_params
     params.require(:song).permit SONG_ATTRIBUTES
   end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
+  end
 end

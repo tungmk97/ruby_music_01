@@ -17,6 +17,15 @@ Song.create! singer_id: 1,
                  description: description
 end
 
+Genre.create! title: "Pop"
+Genre.create! title: "Ballad"
+Genre.create! title: "Rock"
+Genre.create! title: "R&B"
+Genre.create! title: "New"
+
+GenreSong.create! genre_id: 1,
+                  song_id: 1
+
 10.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
@@ -47,7 +56,26 @@ end
                view: view
 end
 
-users = User.order(:created_at).take(10)
+20.times do
+  GenreSong.create! genre_id: rand(1..5),
+                    song_id: rand(2..11)
+end
+
+User.create! name: "Trung",
+             password: "123456",
+             email: "huynhchitrung97@gmail.com",
+             role: 1
+
+10.times do |n|
+  name = Faker::Name.name
+  password = "123456"
+  email = "user#{n+1}@gmail.com"
+  User.create! name: name,
+               password: password,
+               email: email
+end
+
+users = User.order(:created_at).take(11)
 50.times do
   content = Faker::Lorem.sentence(5)
   users.each do |user|
