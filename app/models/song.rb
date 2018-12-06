@@ -15,4 +15,5 @@ class Song < ApplicationRecord
   validates :view, numericality: true
 
   scope :include_to_song, ->{includes :singer, :comments, :genres}
+  scope :hot_feed, ->{order view: :desc}
 end
