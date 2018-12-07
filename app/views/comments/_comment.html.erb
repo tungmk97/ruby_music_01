@@ -1,13 +1,16 @@
-<li>
-  <div class="col-3">
-    <%= gravatar_for comment.user %>
-  </div>
-  <div class="col-9">
-    <p class="user"><%= comment.user.name %></p>
-    <p class="content"><%= comment.content %></p>
-    <span class="timestamp">
-      <%= "#{time_ago_in_words comment.created_at}" %>
-    </span>
-    <%= link_to t(".delete"), comment, method: :delete, data: {confirm: t(".confirm")} %>
-  </div>
-</li>
+<div id="comment-<%= comment.id %>">
+  <li>
+    <div class="col-3">
+      <%= gravatar_for comment.user %>
+    </div>
+    <div class="col-9">
+      <p class="user"><%= comment.user.name %></p>
+      <p class="content"><%= comment.content %></p>
+      <span class="timestamp">
+        <%= "#{time_ago_in_words comment.created_at}" %>
+      </span>
+      <%= link_to t(".delete"), comment, method: :delete,
+        data: {confirm: t(".confirm")}, remote: true %>
+    </div>
+  </li>
+</div>

@@ -1,0 +1,3 @@
+$('.count-song').html('<%= j render "comments/count_comment", song: @song %>');
+$('.notice').html('<%= flash.now[:notice] %>');
+$('#comment-<%= @comment.id %>').remove();

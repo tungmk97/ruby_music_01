@@ -74,14 +74,19 @@
     <% if logged_in? %>
       <div class="row">
       <aside class="col-md-12">
-          <%= render "shared/comment_form" %>
+        <div class="ajax-form-create">
+          <%= render "shared/comment_form", song: @song, comment: @comment %>
+        </div>
       </aside>
     <% end %>
     </div>
     <% if @song.comments.any? %>
-      <span><%= @song.comments.count %><%= t ".comments_count" %></span>
+      <%= render "comments/count_comment", song: @song %>
       <ul class="comments">
-        <%= render @comments %>
+        <div class="notice"></div>
+        <div class="div-create">
+          <%= render @comments %>
+        </div>
       </ul>
       <%= paginate @comments, theme: "twitter-bootstrap-3" %>
     <% end %>

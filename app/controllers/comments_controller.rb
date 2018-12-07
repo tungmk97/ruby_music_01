@@ -6,20 +6,32 @@ class CommentsController < ApplicationController
     @comment = @song.comments.build comment_params
 
     if @comment.save
-      flash[:success] = t ".created"
+      respond_to do |format|
+        format.html{redirect_to @song}
+        format.js{flash.now[:notice] = t ".created"}
+      end
     else
-      flash[:danger] = t ".failed"
+      respond_to do |format|
+        format.html{redirect_to @song}
+        format.js{flash.now[:notice] = t ".failed"}
+      end
     end
-    redirect_to @song
   end
 
   def destroy
+    @song = Song.find_by id: @comment.song.id
+
     if @comment.destroy
-      flash[:success] = t ".destroy"
+      respond_to do |format|
+        format.html{redirect_to @song}
+        format.js{flash.now[:notice] = t ".destroy"}
+      end
     else
-      flash[:danger] = t ".cant_destroy"
+      respond_to do |format|
+        format.html{redirect_to request.referrer || root_url}
+        format.js{flash.now[:notice] = t ".cant_destroy"}
+      end
     end
-    redirect_to request.referrer || root_url
   end
 
   private
