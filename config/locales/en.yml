@@ -87,6 +87,15 @@ en:
       destroy: "Comment deleted"
       cant_destroy: "Can't delete comment"
 
+  admin:
+    songs:
+      new:
+        confirm: Confirm
+        upload: Upload song
+      create:
+        success: Song created
+        failed: Failed
+
   time:
     formats:
       default: "%d/%m/%Y"
