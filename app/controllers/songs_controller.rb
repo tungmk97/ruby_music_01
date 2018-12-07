@@ -1,6 +1,11 @@
 class SongsController < ApplicationController
   def index
-    @songs = Song.page(params[:page]).per Settings.pages.per_page
+    @songs = if params[:search]
+               Song.where("title LIKE ?", "%#{params[:search]}%")
+                   .page(params[:page]).per Settings.pages.per_page
+             else
+               Song.page(params[:page]).per Settings.pages.per_page
+             end
   end
 
   def show
