@@ -69,6 +69,8 @@ en:
     show:
       lyrics: "Lyrics: "
       comments_count: " Comments"
+    song:
+        confirm: Are You Sure?
 
   singers:
     show:
@@ -102,6 +104,9 @@ en:
       update:
         success: Song edited
         failed: Failed
+      destroy:
+        success: Destroy Success
+        failed: Destroy Failed
 
   time:
     formats:

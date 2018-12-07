@@ -5,7 +5,7 @@ class Song < ApplicationRecord
   has_many :liked, as: :likeable
   has_many :comments, dependent: :destroy
   has_many :view_logs
-  has_many :genre_songs
+  has_many :genre_songs, dependent: :destroy
   has_many :genres, through: :genre_songs
 
   validates :title, presence: true,
