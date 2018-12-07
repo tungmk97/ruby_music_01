@@ -22,6 +22,7 @@ vi:
       playlist_created: "Danh sách phát mới tạo thành công"
       delete_failed: "Lỗi xóa Danh sách phát"
       playlist_updated: "Cập nhật Danh sách phát thành công."
+      you_sure: "Bạn chắc chứ?"
     edit:
       update_playlist: "Cập nhật Danh sách phát"
     update:
@@ -71,6 +72,8 @@ vi:
       acostic: Nhạc Acostic
       year: 1970s
       coffe: Cafe
+      album: Album
+      concert: Concert
       artist: Nghệ sĩ
       korea: Hàn Quốc
       japan: Nhật Bản
@@ -91,8 +94,13 @@ vi:
     show:
       lyrics: "Lời: "
       comments_count: "Nhận xét"
+      select_pl: Chọn playlist
+      add_playlist: Thêm vào playlist
     song:
-        confirm: Bạn có chắc chắn không?
+      confirm: Bạn có chắc chắn không?
+      remove_playlist: Xóa khỏi playlist
+      edit: Sửa
+      delete: Xóa
     add_playlist:
       select_playlist: Chọn playlist
       select: Chọn
