@@ -93,6 +93,9 @@ vi:
       comments_count: "Nhận xét"
     song:
         confirm: Bạn có chắc chắn không?
+    add_playlist:
+      select_playlist: Chọn playlist
+      select: Chọn
 
   singers:
     show:
@@ -143,3 +146,13 @@ vi:
   time:
     formats:
       default: "%d/%m/%Y"
+
+
+  datetime:
+    distance_in_words:
+      x_days: "%{count} ngày trước"
+      x_minutes: "%{count} phút trước"
+      x_months: "%{count} tháng trước"
+      x_years: "%{count} năm trước"
+      x_seconds: "%{count} giây trước"
+      about_x_hours: "%{count} giờ trước"
