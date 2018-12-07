@@ -92,6 +92,7 @@ en:
       add_playlist: ADD TO PLAYLIST
     song:
         confirm: Are You Sure?
+        remove_playlist: Remove From Playlist
     add_playlist:
       select_playlist: Select playlist
       select: Select
@@ -136,6 +137,9 @@ en:
     create:
       success: Added to playlist
       failed: Failed
+    destroy:
+      destroy: Song has been removed
+      cant_destroy: Can't remove this song!
 
   time:
     formats:
