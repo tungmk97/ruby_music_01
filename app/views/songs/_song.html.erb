@@ -16,6 +16,9 @@
       <%= t "songs.view" %> 
       <%= song.view %>
     </p>
+    <% if current_user && current_user.admin? %>
+      <%= link_to t(".edit"), edit_admin_song_path(song) %>
+    <% end %>
   </div>
 </li>
 <hr>

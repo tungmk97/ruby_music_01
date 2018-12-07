@@ -1,4 +1,6 @@
 class Admin::SongsController < ApplicationController
+  before_action :current_song, only: %i(edit update)
+
   def new
     @song = Song.new
   end
@@ -15,9 +17,25 @@ class Admin::SongsController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @song.update song_params
+      flash[:success] = t ".success"
+      redirect_to root_url
+    else
+      flash[:daneger] = t ".failed"
+      render :edit
+    end
+  end
+
   private
 
   def song_params
     params.require(:song).permit Song::SONG_ATTRIBUTES
+  end
+
+  def current_song
+    @song = Song.find_by id: params[:id]
   end
 end
