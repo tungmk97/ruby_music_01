@@ -10,8 +10,8 @@ class SongsController < ApplicationController
                      .page(params[:page]).per Settings.pages.per_page
     @comment = current_user.comments.build if logged_in?
     @genres = @song.genres
-    @playlist = current_user.playlists.order_desc if current_user &&
-                                                     current_user.playlists.any?
+    @playlist = current_user.playlists.order_desc if current_user
+                                                     &.playlists&.any?
   end
 
   private

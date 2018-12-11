@@ -1,4 +1,13 @@
 vi:
+  static_pages:
+    home:
+        for_you: Dành cho bạn
+        pre: Xem lại
+        next: Tiếp theo
+        album: Album nghe nhiều
+        bxh: Chủ đề hot
+        chrismas_song: Nhạc giáng sinh
+        vnvd: Việt Nam vô địch
   layouts:
     application:
       language_vi: "Tiếng Việt"
@@ -49,8 +58,7 @@ vi:
       music_app: App nghe nhạc
     header:
       playlist: Danh sách phát
-
-    header:
+      login: Đăng nhập
       all_song: Bài hát
       collection: Bộ sưu tập
       upload: Tải lên
@@ -68,6 +76,7 @@ vi:
       japan: Nhật Bản
       icon-soundcloud: Icon soundcloud
       playlist: Danh sách phát
+      search: Tìm kiếm bài hát...
     static_pages:
       hot_topic: Chủ đề hot
       hot_music: Nhạc hot
