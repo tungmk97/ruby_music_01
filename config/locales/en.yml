@@ -1,4 +1,10 @@
 en:
+  layouts:
+    application:
+      language_vi: "Vietnamese"
+      language_en: "English"
+    header:
+      login: Login
   application:
     require_login: Please log in.
   playlists:

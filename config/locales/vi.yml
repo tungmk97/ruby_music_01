@@ -1,0 +1,126 @@
+vi:
+  layouts:
+    application:
+      language_vi: "Tiếng Việt"
+      language_en: "Tiếng Anh"
+    header:
+      login: Đăng nhập
+  application:
+    require_login: "Hãy đăng nhập"
+  playlists:
+    destroy:
+      playlists_deleted: "Danh sách phát đã được xóa"
+      playlist_created: "Danh sách phát mới tạo thành công"
+      delete_failed: "Lỗi xóa Danh sách phát"
+      playlist_updated: "Cập nhật Danh sách phát thành công."
+    edit:
+      update_playlist: "Cập nhật Danh sách phát"
+    update:
+      playlist_updated: "Danh sách phát đã được cập nhật"
+      update_faild: "Cập nhật lỗi"
+    create:
+      playlsit_created: "Tạo mới danh sách phát thành công"
+  sessions:
+    create:
+      invalid: Email hoặc mật khẩu không đúng
+    new:
+      login: Đăng nhập
+  shared:
+    error: Lỗi
+    playlist_form:
+      create: Tạo mới
+      enter_name: Nhập tên...
+      enter_description: Nhập chú thích...
+      create_new_playlist: Tạo danh sách phát mới
+    user_info: 
+      playlist: Danh sách phát
+    edit_form:
+      save_change: Lưu thay đổi
+  users:
+    create:
+      success: Thành công
+    new:
+      create-account: Tạo tài khoản mới
+    show:
+      not_found: "Không tìm thấy người dùng"
+
+  layouts:
+    application:
+      music_app: App nghe nhạc
+    header:
+      playlist: Danh sách phát
+    
+    header:
+      all_song: Bài hát
+      collection: Bộ sưu tập
+      upload: Tải lên
+      sign_up: Đăng kí
+      top_100: Top 100
+      vietnam: Việt Nam
+      us-uk: Âu Mĩ
+      asia: Châu Á
+      edm: EDM
+      acostic: Nhạc Acostic
+      year: 1970s
+      coffe: Cafe
+      artist: Nghệ sĩ
+      korea: Hàn Quốc
+      japan: Nhật Bản
+      icon-soundcloud: Icon soundcloud
+      playlist: Danh sách phát
+    static_pages:
+      hot_topic: Chủ đề hot
+      hot_music: Nhạc hot
+  
+  songs:
+    title: "Tiêu đề: "
+    post_at: "Thời gian đăng: "
+    view: "Lượt nghe: "
+    genres: "Thể loại: "
+    index:
+      all_songs: "HOT"
+    show:
+      lyrics: "Lời: "
+      comments_count: "Nhận xét"
+    song:
+        confirm: Bạn có chắc chắn không?
+
+  singers:
+    show:
+      singer: "Thông tin ca sĩ"
+      description: "Miêu tả: "
+
+  comments:
+    type: "Nhập nhận xét ..."
+    post: "Đăng"
+    comment:
+      delete: "Xóa"
+      confirm: "Bạn có chắc chắn không"
+    create:
+      created: "Nhận xét được tạo"
+      failed: "Lỗi nhận xét"
+    destroy:
+      destroy: "Đã xóa nhận xét"
+      cant_destroy: "Không thể xóa nhận xét"
+
+  admin:
+    songs:
+      new:
+        confirm: Xác nhận
+        upload: Tải lên bài hát
+      create:
+        success: Tải lên thành công
+        failed: Tải lên lỗi
+      edit:
+        save: Lưu
+        edit: Sửa bài hát
+      update:
+        success: Bài hát đã được cập nhật
+        failed: Cập nhật lỗi
+      destroy:
+        success: Xóa thành công
+        failed: Xóa lỗi
+
+  time:
+    formats:
+      default: "%d/%m/%Y"
