@@ -13,13 +13,14 @@ en:
       playlist_created: "Playlist created!"
       delete_failed: "Delete Failed."
       playlist_updated: "Update success."
+      you_sure: "Are you sure?"
     edit:
       update_playlist: "Update your playlist"
     update:
       playlist_updated: "Playlist Updated"
       update_faild: "Update fail"
     create:
-      playlsit_created: "Playlist created"
+      playlist_created: "Playlist created"
   sessions:
     create:
       invalid: Invalid email or password
@@ -32,7 +33,7 @@ en:
       enter_name: Enter name...
       enter_description: Enter description...
       create_new_playlist: Create new playlist
-    user_info: 
+    user_info:
       playlist: Playlist
     edit_form:
       save_change: "Save change"
@@ -51,7 +52,7 @@ en:
       music_app: Music App
     header:
       playlist: Playlist
-    
+
     header:
       all_song: Songs
       collection: Collection
@@ -76,7 +77,7 @@ en:
     static_pages:
       hot_topic: Hot topic
       hot_music: Hot music
-  
+
   songs:
     title: "Title: "
     post_at: "Post At: "
@@ -87,8 +88,13 @@ en:
     show:
       lyrics: "Lyrics: "
       comments_count: " Comments"
+      select_pl: Choose your playlist
+      add_playlist: ADD TO PLAYLIST
     song:
         confirm: Are You Sure?
+    add_playlist:
+      select_playlist: Select playlist
+      select: Select
 
   singers:
     show:
@@ -125,6 +131,11 @@ en:
       destroy:
         success: Destroy Success
         failed: Destroy Failed
+
+  playlist_songs:
+    create:
+      success: Added to playlist
+      failed: Failed
 
   time:
     formats:

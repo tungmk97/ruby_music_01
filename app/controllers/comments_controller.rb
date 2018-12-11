@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
     else
       flash[:danger] = t ".failed"
     end
-    redirect_to songs_url
+    redirect_to @song
   end
 
   def destroy
@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     else
       flash[:danger] = t ".cant_destroy"
     end
-    redirect_to songs_url
+    redirect_to request.referrer || root_url
   end
 
   private

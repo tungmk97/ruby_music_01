@@ -1,0 +1,10 @@
+<div class="content">
+  <div class="mt-5">
+    <h2 class="text-center"><%= @playlist.name %></h2>
+  </div>
+  <% if @playlist&.songs %>
+    <ul>
+      <%= render @playlist.songs %>
+    </ul>
+  <% end %>
+</div>

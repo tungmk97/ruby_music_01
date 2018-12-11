@@ -1,7 +1,7 @@
 class PlaylistsController < ApplicationController
   before_action :logged_in_user, only: %i(create destroy)
   before_action :correct_user, only: :destroy
-  before_action :find_playlist, only: %i(edit update)
+  before_action :find_playlist, only: %i(edit show update)
 
   def index
     @playlist = current_user.playlists.build if logged_in?
@@ -19,6 +19,8 @@ class PlaylistsController < ApplicationController
       render "playlist/index"
     end
   end
+
+  def show; end
 
   def edit; end
 

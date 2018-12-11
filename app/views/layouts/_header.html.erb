@@ -1,4 +1,4 @@
-<nav class="navbar nav-top navbar-expand-md sticky-top py-0"> 
+<nav class="navbar nav-top navbar-expand-md sticky-top py-0">
   <div class="container">
     <%= link_to image_tag("soundcloud-icon.jpg", alt: (t ".icon-soundcloud"), height: 40, width: 70), root_url, class: "navbar-brand py-0" %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarReponsive">
@@ -23,13 +23,10 @@
             <%= link_to t(".upload"), new_admin_song_url, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
           </li>
         <% else %>
-          <li class="nav-item active">
-            <%= link_to t(".upload"), "#", class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
-          </li>
-        <%end%>
+        <% end %>
         <% if logged_in? %>
           <li class="dropdown">
-            <%= link_to "#", class: "dropdown-toggle nav-link home-link text-white h-100 pt-2 pl-4", 
+            <%= link_to "#", class: "dropdown-toggle nav-link home-link text-white h-100 pt-2 pl-4",
               data: {toggle: "dropdown"} do %>
             <%= t ".account" %> <b class="caret"></b>
             <% end %>
@@ -52,7 +49,7 @@
           <li class="nav-item active">
             <%= link_to t(".sign_up"), signup_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
           </li>
-        <% end %>      
+        <% end %>
       </ul>
     </div>
   </div>

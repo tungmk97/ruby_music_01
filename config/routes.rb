@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :singers
   resources :users
   resources :playlists
+  resources :playlist_songs
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
   get "/signup", to: "users#new"
