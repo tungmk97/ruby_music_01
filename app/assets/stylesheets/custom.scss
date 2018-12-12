@@ -39,7 +39,7 @@ nav {
 }
 
 dropdown-account {
-  background: $red 
+  background: $red;
 }
 /*--------------End-nav-top------------*/
 /*--------------Nav-2------------------*/
@@ -178,4 +178,9 @@ audio {
 .genre {
   display: inline-block;
   margin-bottom: 5px;
+}
+
+.notice {
+  background-color: $notice;
+  border-radius: 5px;
 }

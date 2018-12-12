@@ -93,6 +93,8 @@ vi:
   comments:
     type: "Nhập nhận xét ..."
     post: "Đăng"
+    count_comment:
+      comments_count: " Bình luận"
     comment:
       delete: "Xóa"
       confirm: "Bạn có chắc chắn không"
