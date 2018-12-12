@@ -13,4 +13,16 @@ class PlaylistSongsController < ApplicationController
     end
     redirect_to @song
   end
+
+  def destroy
+    @playlist_song = PlaylistSong.find_by playlist_id: params[:id],
+      song_id: params[:song_id]
+
+    if @playlist_song.destroy
+      flash[:success] = t ".destroy"
+    else
+      flash[:danger] = t ".cant_destroy"
+    end
+    redirect_to request.referrer || root_url
+  end
 end

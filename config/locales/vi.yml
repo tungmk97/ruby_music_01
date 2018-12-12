@@ -32,7 +32,7 @@ vi:
       enter_name: Nhập tên...
       enter_description: Nhập chú thích...
       create_new_playlist: Tạo danh sách phát mới
-    user_info: 
+    user_info:
       playlist: Danh sách phát
     edit_form:
       save_change: Lưu thay đổi
@@ -49,7 +49,7 @@ vi:
       music_app: App nghe nhạc
     header:
       playlist: Danh sách phát
-    
+
     header:
       all_song: Bài hát
       collection: Bộ sưu tập
@@ -71,7 +71,7 @@ vi:
     static_pages:
       hot_topic: Chủ đề hot
       hot_music: Nhạc hot
-  
+
   songs:
     title: "Tiêu đề: "
     post_at: "Thời gian đăng: "
@@ -120,6 +120,14 @@ vi:
       destroy:
         success: Xóa thành công
         failed: Xóa lỗi
+
+  playlist_songs:
+    create:
+      success: Đã thêm vào playlist
+      failed: Thêm vào playlist thất bại
+    destroy:
+      destroy: Bài hát đã xóa khỏi playlist
+      cant_destroy: Không thể xóa bài hát
 
   time:
     formats:
