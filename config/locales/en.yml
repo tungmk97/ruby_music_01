@@ -56,13 +56,10 @@ en:
 
   layouts:
     application:
-      english: English
-      vietnamese: Vietnamese
       music_app: Music App
     header:
       playlist: Playlist
-
-    header:
+      login: Login
       all_song: Songs
       collection: Collection
       upload: Upload
@@ -100,8 +97,10 @@ en:
       select_pl: Choose your playlist
       add_playlist: ADD TO PLAYLIST
     song:
-        confirm: Are You Sure?
-        remove_playlist: Remove From Playlist
+      confirm: Are You Sure?
+      remove_playlist: Remove From Playlist
+      edit: Edit
+      delete: Delete
     add_playlist:
       select_playlist: Select playlist
       select: Select
