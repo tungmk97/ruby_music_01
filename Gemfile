@@ -4,7 +4,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 gem "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap"
-gem "bootstrap-kaminari-views"
+gem "bootstrap4-kaminari-views"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker"

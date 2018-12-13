@@ -1,7 +1,7 @@
 <div class="content">
   <div class="row mt-5">
-      <div class="col-3">
-      <%= image_tag "play.png", width: 150 %>
+    <div class="col-3">
+      <%= image_tag "play.png", class: "w-100"%>
     </div>
     <div class="col-6">
       <h3>
@@ -88,7 +88,7 @@
           <%= render @comments %>
         </div>
       </ul>
-      <%= paginate @comments, theme: "twitter-bootstrap-3" %>
+      <%= paginate @comments, theme: "twitter-bootstrap-4" %>
     <% end %>
   </div>
 </div>

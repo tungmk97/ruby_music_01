@@ -14,8 +14,8 @@
         </li>
         <li class="active-pink-3 active-pink-4 mb-4 search-box">
           <%= form_tag songs_path, method: :get do %>
-            <%= text_field_tag :search, params[:search] %>
-            <%= submit_tag "Search" %>
+            <%= text_field_tag :search, params[:search], class: "search", placeholder: t(".search") %>
+            <%= submit_tag "Search", class: "search-button" %>
           <% end %>
         </li>
         <% if current_user&.admin? %>
@@ -40,11 +40,11 @@
             </ul>
           </li>
           <li class="nav-item active">
-            <%= link_to t(".playlist"), playlists_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
+            <%= link_to t(".playlist"), playlists_path, class: "nav-link home-link ds-list text-white h-100 pt-2 pl-4" %>
           </li>
         <% else %>
-          <li class="nav-item active">
-            <%= link_to t(".login"), login_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
+          <li class="nav-item active text-center">
+            <%= link_to t(".login"), login_path, class: "nav-link home-link text-white h-100 pt-2 pl-4 up-size" %>
           </li>
           <li class="nav-item active">
             <%= link_to t(".sign_up"), signup_path, class: "nav-link home-link text-white h-100 pt-2 pl-4" %>
@@ -55,7 +55,7 @@
   </div>
 </nav>
 
-<nav class="navbar nav-2 navbar-expand-lg navbar-light">
+<nav class="navbar nav-2 navbar-expand-lg">
   <div class="container">
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">

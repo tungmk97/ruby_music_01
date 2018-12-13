@@ -1,4 +1,13 @@
 en:
+  static_pages:
+    home:
+        for_you: Just for you
+        pre: Previous
+        next: Next
+        album: Album Population
+        bxh: Hot Topic
+        chrismas_song: The chrismas song
+        vnvd: VietNam champion
   layouts:
     application:
       language_vi: "Vietnamese"
@@ -73,11 +82,11 @@ en:
       japan: Japan
       icon-soundcloud: Icon soundcloud
       playlist: Playlist
-      search: Search
+      search: Search...
     static_pages:
       hot_topic: Hot topic
       hot_music: Hot music
-
+      
   songs:
     title: "Title: "
     post_at: "Post At: "
