@@ -86,7 +86,7 @@ en:
     static_pages:
       hot_topic: Hot topic
       hot_music: Hot music
-      
+
   songs:
     title: "Title: "
     post_at: "Post At: "

@@ -183,7 +183,7 @@ audio {
 }
 
 .notice {
-  background-color: $notice;
+  background-color: $green-notice;
   border-radius: 5px;
 }
 
@@ -260,10 +260,10 @@ audio {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px $gray; 
+  box-shadow: inset 0 0 5px $gray;
   border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: $dimgray;
   border-radius: 10px;
@@ -274,7 +274,7 @@ audio {
 }
 
 .card {
-  background: $midnightbluemidnightblue;
+  background: $midnightblue;
   border: unset;
   display: inline-block;
   margin-right: 10px

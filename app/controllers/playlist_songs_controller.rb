@@ -7,11 +7,10 @@ class PlaylistSongsController < ApplicationController
       song_id: @song.id
 
     if @playlist_song.save
-      flash[:success] = t ".success"
+      render json: {status: t(".success")}
     else
-      flash[:danger] = t ".failed"
+      render json: {status: t(".failed")}
     end
-    redirect_to @song
   end
 
   def destroy

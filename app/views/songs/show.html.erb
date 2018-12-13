@@ -80,15 +80,13 @@
       </aside>
     <% end %>
     </div>
-    <% if @song.comments.any? %>
-      <%= render "comments/count_comment", song: @song %>
-      <ul class="comments">
-        <div class="notice"></div>
-        <div class="div-create">
-          <%= render @comments %>
-        </div>
-      </ul>
-      <%= paginate @comments, theme: "twitter-bootstrap-4" %>
-    <% end %>
+    <%= render "comments/count_comment", song: @song %>
+    <ul class="comments">
+      <div class="notice"></div>
+      <div class="div-create">
+        <%= render @comments %>
+      </div>
+    </ul>
+    <%= paginate @comments, theme: "twitter-bootstrap-4" %>
   </div>
 </div>
